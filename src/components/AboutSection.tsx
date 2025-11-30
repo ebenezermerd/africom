@@ -449,6 +449,45 @@ export default function AboutSection() {
               </div>
             </div>
           </motion.div>
+           <motion.div
+            className="col-span-1 md:col-span-2"
+            initial={{ opacity: 0, y: 50 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.8, delay: 0.45 }}
+          >
+            <div className="h-full min-h-[280px] rounded-3xl bg-cover bg-center relative overflow-hidden group cursor-pointer"
+              style={{ backgroundImage: `url('https://images.unsplash.com/photo-1448375240586-dfd8d395ea6c?q=80&w=2670&auto=format&fit=crop')` }}
+            >
+              <div className="absolute inset-0 bg-black/60 group-hover:bg-black/40 transition-colors duration-500" />
+              
+              {/* Floating stats */}
+              <div className="absolute top-6 right-6 flex gap-3">
+                <div className="px-3 py-2 rounded-xl bg-black/40 backdrop-blur-md border border-white/10">
+                  <div className="text-lg font-bold text-white">50K+</div>
+                  <div className="text-[9px] text-white/50">Members</div>
+                </div>
+                <div className="px-3 py-2 rounded-xl bg-black/40 backdrop-blur-md border border-white/10">
+                  <div className="text-lg font-bold text-[#4ade80]">195</div>
+                  <div className="text-[9px] text-white/50">Countries</div>
+                </div>
+              </div>
+
+              <div className="absolute bottom-0 left-0 p-8 w-full z-10">
+                <h4 className="text-xl font-medium text-white mb-2">The Green Initiative</h4>
+                <div className="flex justify-between items-end">
+                  <p className="text-sm text-white/70 max-w-xs font-light">
+                    Join 50,000+ preservers ensuring a safer tomorrow.
+                  </p>
+                  <motion.div 
+                    className="w-12 h-12 rounded-full bg-white/10 backdrop-blur-md text-white flex items-center justify-center border border-white/20"
+                    whileHover={{ scale: 1.1, backgroundColor: 'rgba(74,222,128,0.3)' }}
+                  >
+                    <ArrowUpRight className="w-5 h-5" />
+                  </motion.div>
+                </div>
+              </div>
+            </div>
+          </motion.div>
         </div>
       </div>
     </section>

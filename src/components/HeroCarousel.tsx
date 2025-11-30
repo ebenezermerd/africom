@@ -98,7 +98,7 @@ export default function HeroCarousel() {
             <div className="overflow-hidden mb-4">
               <motion.p
                 key={`label-${currentSlide}`}
-                className="text-xs font-medium tracking-[0.3em] text-[#4ade80] uppercase"
+                className="text-sm font-medium tracking-[0.3em] text-[#4ade80] uppercase"
                 initial={{ y: 40, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
@@ -111,7 +111,7 @@ export default function HeroCarousel() {
             <div className="overflow-hidden">
               <motion.h1
                 key={`title1-${currentSlide}`}
-                className="text-5xl md:text-7xl lg:text-8xl font-bold leading-[0.85] tracking-tighter text-white"
+                className="text-7xl md:text-9xl lg:text-10xl font-bold leading-[0.85] tracking-tighter text-white"
                 initial={{ y: 100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.8, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
@@ -123,7 +123,7 @@ export default function HeroCarousel() {
             <div className="overflow-hidden">
               <motion.h1
                 key={`title2-${currentSlide}`}
-                className="text-5xl md:text-7xl lg:text-8xl font-bold leading-[0.85] tracking-tighter text-[#4ade80]"
+                className="text-7xl md:text-9xl lg:text-10xl font-bold leading-[0.85] tracking-tighter text-[#4ade80]"
                 initial={{ y: 100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.8, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
@@ -138,7 +138,7 @@ export default function HeroCarousel() {
               key={`desc-${currentSlide}`}
             >
               <motion.p
-                className="text-sm md:text-base font-light text-white/70 leading-relaxed border-l border-[#4ade80] pl-6"
+                className="text-lg md:text-xl font-light text-white/70 leading-relaxed border-l border-[#4ade80] pl-6"
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6, delay: 0.6 }}
@@ -153,7 +153,7 @@ export default function HeroCarousel() {
                 transition={{ duration: 0.6, delay: 0.8 }}
               >
                 <motion.button
-                  className="px-6 py-3 bg-white text-black text-xs font-bold tracking-widest uppercase hover:bg-[#4ade80] transition-colors duration-300"
+                  className="px-8 py-4 bg-white text-black text-lg font-semibold tracking-widest uppercase hover:bg-[#4ade80] transition-colors duration-300"
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                   onClick={handleScrollToAbout}

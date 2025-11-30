@@ -50,6 +50,18 @@ const videoData = [
     views: "4.2M",
     category: "Polar",
     color: "#a78bfa"
+  },
+  {
+    id: 5,
+    title: "Arctic Aurora",
+    subtitle: "POLAR • HDR10+",
+    description: "Experience the dancing lights of the aurora borealis over pristine ice landscapes.",
+    thumbnail: "https://images.unsplash.com/photo-1531366936337-7c912a4589a7?q=80&w=2670&auto=format&fit=crop",
+    video: "https://images.unsplash.com/photo-1531366936337-7c912a4589a7?q=80&w=2670&auto=format&fit=crop",
+    duration: "15:28",
+    views: "4.2M",
+    category: "Polar",
+    color: "#a78bfa"
   }
 ];
 
