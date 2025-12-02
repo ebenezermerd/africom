@@ -10,6 +10,12 @@ import GallerySection from './components/GallerySection';
 import FAQSection from './components/FAQSection';
 import Footer from './components/Footer';
 
+// New Creative Scroll Sections
+import ImageZoomSection from './components/ImageZoomSection';
+import TextRevealSection from './components/TextRevealSection';
+import SpatialZoomSection from './components/SpatialZoomSection';
+import StackedCardsSection from './components/StackedCardsSection';
+
 export default function App() {
     useEffect(() => {
         // Smooth scroll behavior
@@ -28,9 +34,21 @@ export default function App() {
         >
             <Navigation />
             <HeroCarousel />
+
+            <ImageZoomSection />
+
             <AboutSection />
+
+            <TextRevealSection />
+
             <EcosystemsSection />
+
+            <StackedCardsSection />
+
             <VideoShowcase />
+
+            <SpatialZoomSection />
+
             <GallerySection />
             <FAQSection />
             <Footer />
